@@ -1,4 +1,4 @@
-# Push-Up Form Classifier & Biomechanical Analyzer 🏋️‍♂️
+# Push-Up Form Classifier & Biomechanical Analyzer
 
 Sistem kecerdasan buatan berbasis *computer vision* untuk menganalisis, mengklasifikasikan, dan menghitung repetisi gerakan push-up secara *real-time* berbasis sudut sendi biomekanis. Sistem ini menggunakan **MediaPipe Pose Landmarker** untuk pelacakan sendi tubuh dan **Random Forest Classifier** sebagai mesin inferensinya, dioptimalkan secara khusus untuk berjalan sangat ringan pada perangkat CPU saja (uji coba dilakukan pada Lenovo ThinkPad T540p).
 
@@ -6,7 +6,7 @@ Sistem ini melacak parameter biomekanik tubuh per frame untuk mengidentifikasi a
 
 ---
 
-## 🚀 Fitur Utama
+## Fitur Utama
 
 1.  **Pelacakan Sendi Real-Time:** Menghitung sudut siku, pinggul, lutut, dan penyimpangan pinggul (*hip deviation*) secara *live* menggunakan kamera/webcam atau file video.
 2.  **Klasifikasi Akurasi Tinggi (93,78%):** Menggunakan model Random Forest yang dilatih pada dataset gerakan manusia asli untuk mendeteksi gerakan benar vs salah.
@@ -19,7 +19,7 @@ Sistem ini melacak parameter biomekanik tubuh per frame untuk mengidentifikasi a
 
 ---
 
-## 📂 Struktur Proyek
+## Struktur Proyek
 
 ```text
 ML Project/
@@ -28,16 +28,10 @@ ML Project/
 ├── dataset/
 │   ├── README.md               # Dokumentasi sumber dataset UCF101, HMDB51, & Kaggle
 │   └── dataset.csv             # Hasil ekstraksi koordinat keypoints biomekanis
-├── doc/
-│   └── paper_draft.md          # Draf naskah ilmiah Sinta 4 tentang eksperimen sistem
 ├── models/
 │   ├── pushup_classifier.joblib # Model Random Forest terpilih (9.6 MB)
 │   └── confusion_matrix.png     # Visualisasi grafik performa evaluasi model
-├── scratch/                    # Script penunjang unduhan resumable & testing
-│   ├── download_datasets_resumable.py
-│   └── download_kaggle.py
 └── src/
-    ├── extract_kaggle_features.py # Ekstraksi fitur koordinat dari video Kaggle
     ├── real_time_app.py        # Aplikasi dasbor pelacakan push-up real-time
     ├── train_model.py          # Script pelatihan dan pemilihan model terbaik
     └── utils.py                # Fungsi utilitas matematika sudut & unduh model pose
@@ -45,7 +39,7 @@ ML Project/
 
 ---
 
-## 🛠️ Instalasi & Persiapan
+## Instalasi & Persiapan
 
 ### 1. Prasyarat
 *   Python 3.10 atau versi di atasnya
@@ -66,7 +60,7 @@ KAGGLE_KEY=api_key_kaggle_anda
 
 ---
 
-## 💻 Cara Menjalankan Sistem
+## Cara Menjalankan Sistem
 
 Sistem dapat dijalankan langsung menggunakan model terlatih (`pushup_classifier.joblib`) yang sudah disertakan di dalam folder `models/`.
 
@@ -110,7 +104,7 @@ Script ini akan mencetak laporan klasifikasi (*Classification Report*) dan menyi
 
 ---
 
-## 📊 Hasil Evaluasi Eksperimen
+## Hasil Evaluasi Eksperimen
 
 Pelatihan dilakukan pada **10.925 frame** data berlabel yang seimbang (stratified split 80:20):
 
@@ -129,5 +123,5 @@ Sistem terbukti memiliki ketahanan yang sangat baik dalam membedakan gerakan ben
 
 ---
 
-## 📝 Lisensi
+## Lisensi
 Proyek ini dibuat untuk keperluan akademis dan penelitian klasifikasi aktivitas olahraga. Anda dipersilakan menyalin atau memodifikasi kode ini untuk tujuan edukasi.
