@@ -54,8 +54,7 @@ Struktur folder lokal:
 ```text
 dataset/
 ├── README.md               <-- File Dokumentasi Ini (Diupload ke GitHub)
-├── dataset/                <-- Folder Khusus Diupload ke GitHub
-│   └── dataset.csv         <-- Hasil Ekstraksi Fitur Keypoints (CSV, ~700 KB)
+└── dataset.csv             <-- Hasil Ekstraksi Fitur Keypoints (CSV, ~700 KB)
 ├── raw/                    <-- [Git-ignored] Folder Video Klasifikasi Spesifik
 │   ├── benar/
 │   ├── salah_hike/
