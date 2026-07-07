@@ -52,7 +52,7 @@ pip install opencv-python mediapipe numpy pandas scikit-learn joblib python-dote
 ```
 
 ### 3. Konfigurasi Kredensial Kaggle (Opsional - Jika ingin mengunduh ulang)
-Jika Anda ingin mengunduh ulang dataset dari Kaggle secara terprogram, buat file bernama `.env` di direktori utama proyek, lalu tambahkan kredensial Kaggle API Anda:
+Jika ingin mengunduh ulang dataset dari Kaggle secara terprogram, buat file bernama `.env` di direktori utama proyek, lalu tambahkan kredensial Kaggle API Anda:
 ```env
 KAGGLE_USERNAME=username_kaggle_anda
 KAGGLE_KEY=api_key_kaggle_anda
@@ -65,7 +65,7 @@ KAGGLE_KEY=api_key_kaggle_anda
 Sistem dapat dijalankan langsung menggunakan model terlatih (`pushup_classifier.joblib`) yang sudah disertakan di dalam folder `models/`.
 
 ### 1. Menjalankan Aplikasi Pelacakan Push-Up Real-Time
-Anda dapat menggunakan webcam laptop Anda secara langsung atau memasukkan file video:
+Sistem dapat menggunakan webcam laptop secara langsung atau memasukkan file video:
 
 *   **Menggunakan Webcam (Default):**
     ```bash
@@ -80,7 +80,7 @@ Anda dapat menggunakan webcam laptop Anda secara langsung atau memasukkan file v
 
 ## 🔬 Rekonstruksi & Pelatihan Model dari Awal
 
-Jika Anda ingin mereproduksi eksperimen pelatihan model secara utuh:
+Jika ingin mereproduksi eksperimen pelatihan model secara utuh:
 
 ### Langkah 1: Unduh Dataset Video
 Jalankan script pengunduh untuk mengunduh dataset push-up Kaggle:
@@ -124,4 +124,4 @@ Sistem terbukti memiliki ketahanan yang sangat baik dalam membedakan gerakan ben
 ---
 
 ## Lisensi
-Proyek ini dibuat untuk keperluan akademis dan penelitian klasifikasi aktivitas olahraga. Anda dipersilakan menyalin atau memodifikasi kode ini untuk tujuan edukasi.
+Proyek ini dibuat untuk memenuhi salah satu Tugas Mata Kuliah Machine Learning dan penelitian klasifikasi aktivitas olahraga. 
